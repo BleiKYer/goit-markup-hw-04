@@ -14,6 +14,7 @@
   --primary-section-bgc: #f5f4fa;
   --hero-footer-bgc: #2f303a;
   --primary-white: #ffffff;
+  --primary-icon-color: #afb1b8;
 }
 
 /* Common styles */
@@ -142,6 +143,19 @@ img {
 .site-nav .link.current {
   color: var(--accent-color);
 }
+
+.contacts .link {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.icon.phone,
+.icon.envelope {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
 .contacts .link:hover,
 .contacts .link:focus {
   color: var(--accent-color);
@@ -221,6 +235,17 @@ img {
 .feature-list-item:not(:last-child) {
   margin-right: 30px;
 }
+
+.feature-icon {
+  padding: 25px 100px;
+
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+
+  background-color: var(--primary-section-bgc);
+}
+
 .feature-list .title {
   color: var(--secondary-text-color);
 
@@ -276,6 +301,34 @@ img {
   font-weight: 500;
 
   margin-bottom: 10px;
+}
+.social-links {
+  display: flex;
+  margin-top: 16px;
+  justify-content: center;
+}
+.team-member-card .link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+  justify-content: center;
+
+  align-items: center;
+  fill: var(--primary-icon-color);
+}
+.social-nav:not(:last-child) {
+  margin-right: 10px;
+}
+
+/* .social-nav {
+  display: flex;
+} */
+.team-member-card .link:hover,
+.team-member-card .link:focus {
+  background-color: var(--accent-color);
+  fill: var(--primary-white);
 }
 
 /* Footer */
